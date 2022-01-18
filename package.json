@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "pretty": "prettier -w quota.js index.html server.js",
+    "serve": "bash startserver.sh"
+  },
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
+}

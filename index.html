@@ -1,0 +1,17 @@
+Gp Heroku
+
+<script>
+  let pass = localStorage.getItem("ADMIN_PASS");
+
+  if (!pass) {
+    pass = window.prompt("Admin Pass");
+  }
+
+  fetch("/quota", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ pass }),
+  }).then((resp) =>
+    resp.text().then((text) => document.write("<pre>" + text + "</pre>"))
+  );
+</script>
