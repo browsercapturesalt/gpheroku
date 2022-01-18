@@ -1,5 +1,6 @@
 {
-  "scripts": {"pretty": "prettier -w quota.js index.html server.js",
+  "scripts": {
+    "pretty": "prettier -w quota.js index.html server.js package.json",
     "serve": "bash startserver.sh"
   },
   "dependencies": {

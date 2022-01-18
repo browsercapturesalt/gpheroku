@@ -1,11 +1,15 @@
-Gp Heroku
+Gp Heroku Quota
 
 <script>
+  document.title = "Gp Heroku Quota";
+
   let pass = localStorage.getItem("ADMIN_PASS");
 
   if (!pass) {
     pass = window.prompt("Admin Pass");
   }
+
+  localStorage.setItem("ADMIN_PASS", pass);
 
   fetch("/quota", {
     method: "POST",
