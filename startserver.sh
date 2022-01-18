@@ -1,3 +1,3 @@
-eval $(gp env -e)
+. env.sh
 
 node server.js
