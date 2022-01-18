@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "heroku-postbuild": "curl https://cli-assets.heroku.com/install-ubuntu.sh | sudo sh",
     "pretty": "prettier -w quota.js index.html server.js",
     "serve": "bash startserver.sh"
   },
